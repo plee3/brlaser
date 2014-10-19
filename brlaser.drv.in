@@ -70,6 +70,15 @@ MediaType 6 "ENV/Envelopes"
 MediaType 7 "ENV-THICK/Thick envelopes"
 MediaType 8 "ENV-THIN/Thin envelopes"
 
+//Duplex none
+Duplex normal
+//flip: the back side image needs to be flipped vertically (inkjet)
+//Duplex flip
+//rotated: the back side image needs to be rotated 180 degrees for DuplexNoTumble
+//Duplex rotated
+//manualtumble: the back side image needs to be rotated 180 degrees for DuplexTumble
+//Duplex manualtumble
+
 Option "brlaserEconomode/Toner save mode" Boolean AnySetup 10
   *Choice False/Off "<</cupsInteger10 0>>setpagedevice"
   Choice True/On "<</cupsInteger10 1>>setpagedevice"

@@ -72,6 +72,9 @@ void job::write_page_header() {
           page_params_.papersize.c_str());
   fprintf(out_, "@PJL SET PAGEPROTECT = AUTO\n");
   fprintf(out_, "@PJL SET ORIENTATION = PORTRAIT\n");
+  fprintf(out_, "@PJL SET DUPLEX = %s\n",
+	  page_params_.duplex ? "ON" : "OFF");
+  fprintf(out_, "@PJL SET BINDING = LONGEDGE");  // SHORTEDGE
   fprintf(out_, "@PJL ENTER LANGUAGE = PCL\n");
 }
 

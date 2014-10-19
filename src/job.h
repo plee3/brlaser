@@ -28,13 +28,15 @@ struct page_params {
   std::string sourcetray;
   std::string mediatype;
   std::string papersize;
+  bool duplex;
 
   bool operator==(const page_params &o) const {
     return resolution == o.resolution
       && economode == o.economode
       && sourcetray == o.sourcetray
       && mediatype == o.mediatype
-      && papersize == o.papersize;
+      && papersize == o.papersize
+      && duplex == o.duplex;
   }
 };
 
