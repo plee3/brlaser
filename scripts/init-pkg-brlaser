@@ -1,0 +1,1 @@
+sudo apt-get install git autoconf automake make gcc g++ libcups2-dev libcupsimage2 libcupsimage2-dev
